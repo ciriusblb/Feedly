@@ -7,5 +7,15 @@
 </ion-header>
 
 <ion-content padding>
-
+  <ion-card>
+    <ion-card-header>
+      Explore Nearby
+    </ion-card-header>
+  
+    <ion-list>
+      <button ion-item *ngFor="let usuario of usuarios">
+        {{usuario.id}} - {{usuario.name}}
+      </button>
+    </ion-list>
+  </ion-card>
 </ion-content>
